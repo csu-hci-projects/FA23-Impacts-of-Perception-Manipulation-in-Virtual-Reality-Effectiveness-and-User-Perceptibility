@@ -23,6 +23,7 @@ public class Lazer : MonoBehaviour
                 //Debug.Log("Cawabummer");
                 if (Physics.Raycast(transform.position, -transform.up, out hit, Mathf.Infinity, targetMask))
                 {
+                    hit.collider.gameObject.transform.parent.GetComponent<targetSpawner>().startSpawnTimer();
                     Destroy(hit.collider.gameObject);
                     Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAA");
                 }
