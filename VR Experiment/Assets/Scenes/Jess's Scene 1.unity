@@ -2093,6 +2093,7 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 0
+  delayCount20msStart: 0
 --- !u!1 &192135050
 GameObject:
   m_ObjectHideFlags: 0
@@ -7447,6 +7448,7 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 64
+  delayCount20msStart: 10
 --- !u!1 &644749417
 GameObject:
   m_ObjectHideFlags: 0
