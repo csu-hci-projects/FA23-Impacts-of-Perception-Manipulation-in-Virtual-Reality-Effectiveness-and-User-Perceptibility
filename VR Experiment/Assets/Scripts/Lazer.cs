@@ -21,8 +21,7 @@ public class Lazer : MonoBehaviour
         foreach (var device in inputDevices) if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
             {
                 //Debug.Log("Cawabummer");
-                Vector3 shootSpot = transform.position + new Vector3(0f, 0f, 6f);
-                if (Physics.Raycast(shootSpot, -transform.up, out hit, Mathf.Infinity, targetMask))
+                if (Physics.Raycast(transform.position, -transform.up, out hit, Mathf.Infinity, targetMask))
                 {
                     hit.collider.gameObject.transform.parent.GetComponent<targetSpawner>().startSpawnTimer();
                     Destroy(hit.collider.gameObject);
