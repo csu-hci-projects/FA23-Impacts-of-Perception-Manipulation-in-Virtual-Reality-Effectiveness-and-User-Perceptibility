@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Text;
+using System.IO;
+using System;
 
 public class Lazer : MonoBehaviour
 {
@@ -13,7 +16,11 @@ public class Lazer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        string filePath = getPath();
+        StreamWriter writer = new StreamWriter(filePath);
+        writer.WriteLine("Hello,World");
+        writer.Flush();
+        writer.Close();
     }
 
     // Update is called once per frame
@@ -53,5 +60,10 @@ public class Lazer : MonoBehaviour
                 fire = false;
             }
         }
+    }
+
+    private string getPath()
+    {
+        return "/sdcard/Download" + "/" + "Saved_Data.csv";
     }
 }
