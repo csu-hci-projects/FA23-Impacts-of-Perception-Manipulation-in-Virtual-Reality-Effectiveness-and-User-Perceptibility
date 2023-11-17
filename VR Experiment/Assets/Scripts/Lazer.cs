@@ -6,6 +6,7 @@ public class Lazer : MonoBehaviour
 {
     public LayerMask targetMask;
     bool triggerValue;
+    bool lastShot;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,9 @@ public class Lazer : MonoBehaviour
         var inputDevices = new List<UnityEngine.XR.InputDevice>();
         UnityEngine.XR.InputDevices.GetDevices(inputDevices);
         RaycastHit hit;
-        foreach (var device in inputDevices) if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
+        foreach (var device in inputDevices) if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue && !lastShot)
             {
+                lastShot = true;
                 //Debug.Log("Cawabummer");
                 if (Physics.Raycast(transform.position, -transform.up, out hit, Mathf.Infinity, targetMask))
                 {
@@ -28,5 +30,9 @@ public class Lazer : MonoBehaviour
                     Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAA");
                 }
             }
+        if (!triggerValue)
+        {
+            lastShot = false;
+        }
     }
 }
