@@ -5,9 +5,10 @@ using UnityEngine;
 public class targetSpawner : MonoBehaviour
 {
     public GameObject targetPrefab;
-    public float respawnTime;
+    float respawnTime = 2f;
     float currRespawnTime;
     bool spawning = false;
+
     // Start is called before the first frame update
     void Start()
     {
