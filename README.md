@@ -16,4 +16,6 @@ Requires:
 
 ## Link to our [GitHub project](https://github.com/csu-hci-projects/FA23-Impacts-of-Perception-Manipulation-in-Virtual-Reality-Effectiveness-and-User-Perceptibility)
 
+## Our [source code](https://github.com/csu-hci-projects/FA23-Impacts-of-Perception-Manipulation-in-Virtual-Reality-Effectiveness-and-User-Perceptibility/tree/main/VR%20Experiment) is located in the VR Experiment folder
+
 ## Link to our [Overleaf project](https://www.overleaf.com/1136736914drvghcqjgkmd#3b4e16)
