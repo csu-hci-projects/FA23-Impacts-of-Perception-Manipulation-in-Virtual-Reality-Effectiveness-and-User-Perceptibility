@@ -12,7 +12,7 @@ Requires:
 - VR headset, we used Quest 2
 - Oculus Link cable
 
-## Links to our [short](), [demo and code](https://www.youtube.com/watch?v=NpvvXUUoY9I), and [presentation]() videos
+## Links to our [short](), [demo and code](https://www.youtube.com/watch?v=NpvvXUUoY9I), and [presentation](https://github.com/csu-hci-projects/FA23-Impacts-of-Perception-Manipulation-in-Virtual-Reality-Effectiveness-and-User-Perceptibility/blob/main/Videos/presentation_video.mp4) videos
 
 ## Link to our [GitHub project](https://github.com/csu-hci-projects/FA23-Impacts-of-Perception-Manipulation-in-Virtual-Reality-Effectiveness-and-User-Perceptibility)
 
